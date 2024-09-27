@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  /* background-color: rgb(0, 0, 0); */
+  background-image: url("https://i.pinimg.com/originals/67/55/ec/6755ec12f9ca977cfa582b49f85c0702.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.base{
+  box-shadow: 1px 5px 5px silver;
+}
+
+.screen {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(210, 210, 210);
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.custom-margin {
+  margin-top: 70px;
+  padding: 80px 100px 20px 100px;
+}
+.custom-margin2 {
+  margin-bottom: 20px;
+  padding: 100px 100px 20px 100px;
+  margin-top: 20px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly;
+}
+
+.jjj{
+  display: flex; 
+  flex-direction: row; 
+  justify-content:space-between;
+}
+
+.ggg{
+  width:350px;
+  height:270px;
+  align-self: center;
+  box-shadow: 1px 5px 5px black;
+}
+
+.card{
+  box-shadow: 1px 7px 7px black;
+}
+
+.btn1:hover{
+  background-color: skyblue;
+  color: black;
+}
+
+/* .container{
+    opacity: 0.6; 
+    background-color: rgb(210, 210, 210);
+} */
+
+
+#chap-pic{
+  height: 250px;
+  width: 250px;
+}
+
+.accordion-container {
+  width: 70%; 
+  margin: 0 auto; 
+}
+
+.accordion {
+  width: 100%; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.summary{
+  padding:0 100px 0 100px;
+}
+
+
+@media screen and (max-width:700px) {
+  #chap-pic{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .custom-margin {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 50px;
+  }
+
+  .summary{
+    padding:0 50px 0 50px;
+  }
+
+  .jjj{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ggg{
+    width:80%;
+    height:50%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .custom-margin2{
+    flex-direction: column;
+    padding: 100px 50px 20px 50px;
+  }
+
+  .accordion-container {
+    width: 90%; 
+  }
+
+  .custom-margin {
+    padding-right:20px;
+    padding-left:20px;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .custom-margin2{
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width:290px) {
+  .baap{
+    display: none;
+  }
+}
